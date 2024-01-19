@@ -1,0 +1,11 @@
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\bin\Debug\DayOne.exe.config
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\bin\Debug\DayOne.exe
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\bin\Debug\DayOne.pdb
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\obj\Debug\DayOne.csproj.AssemblyReference.cache
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\obj\Debug\DayOne.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\obj\Debug\DayOne.Form1.resources
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\obj\Debug\DayOne.Properties.Resources.resources
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\obj\Debug\DayOne.csproj.GenerateResource.cache
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\obj\Debug\DayOne.csproj.CoreCompileInputs.cache
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\obj\Debug\DayOne.exe
+C:\Users\Joeee\Desktop\Pokemon\DayOne\DayOne\obj\Debug\DayOne.pdb
