@@ -14,12 +14,15 @@ namespace DayOne
     public partial class Form1 : Form
     {
         //Cambiar "D:\Rouzed\S" por su directorio donde se encuntrar sus imagenes
-        private List<string> str = Directory.GetFiles(@"D:\Rouzed\S").Where(a => a.EndsWith(".jpg") || a.EndsWith(".png")).ToList();
+        List<string> str;
+        private DirectoryInfo info = new DirectoryInfo(@"D:\Rouzed\S");
         private int i = 0;
         public Form1()
         {
             InitializeComponent();
-            if(str != null)
+            FileInfo[] files = info.GetFiles().OrderByDescending(p => p.LastWriteTime).ToArray();
+            str = files.Where(a => a.Extension == ".jpg" || a.Extension == ".png").Select(a => a.FullName).ToList();
+            if (str != null)
             {
                 this.KeyPreview = true;
                 this.BackgroundImage = Image.FromFile(str[i]);
