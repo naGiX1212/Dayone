@@ -46,7 +46,9 @@ namespace DayOne
                 {
                     i = 0;
                 }
+                this.BackgroundImage.Dispose();
                 this.BackgroundImage = Image.FromFile(str[i]);
+
             }
             catch (Exception m)
             {
