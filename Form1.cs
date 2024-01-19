@@ -19,9 +19,12 @@ namespace DayOne
         public Form1()
         {
             InitializeComponent();
-            this.KeyPreview = true;
-            this.BackgroundImage = Image.FromFile(str[i]);
-            this.KeyDown += Form1_KeyDown;
+            if(str != null)
+            {
+                this.KeyPreview = true;
+                this.BackgroundImage = Image.FromFile(str[i]);
+                this.KeyDown += Form1_KeyDown;
+            }
 
 
         }
