@@ -37,12 +37,16 @@ namespace DayOne
 
             try
             {
-                i++;
-                this.BackgroundImage = Image.FromFile(str[i]);
+                if(i<0)
+                {
+                    i = str.Count()-1;
+                }
+                
                 if (i >= str.Count())
                 {
                     i = 0;
                 }
+                this.BackgroundImage = Image.FromFile(str[i]);
             }
             catch (Exception m)
             {
@@ -53,9 +57,15 @@ namespace DayOne
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             //Suppose when User Press Ctrl + J then Click Button1
-            if (e.KeyCode == Keys.Space)
+            if (e.KeyCode == Keys.Space || e.KeyCode == Keys.Right)
             {
-                this.Form1_Click(sender,e);
+                i++;
+                this.Form1_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Left)
+            {
+                i--;
+                this.Form1_Click(sender, e);
             }
         }
     }
